@@ -1,19 +1,21 @@
-set background=dark
-set noeb vb t_vb=
+set noerrorbells 
+set visualbell
+set t_vb=
 
 syntax enable
+set background=dark
 
-set tabstop=4	       " number of visual spaces per TAB
-set softtabstop=4	   " number of spaces in tab when editing
-"set expandtab			" tabs are spaces
+set tabstop=4           " number of visual spaces per TAB
+set softtabstop=4       " number of spaces in tab when editing
+set expandtab           " tabs are spaces
 
 set number              " show line numbers
 set showcmd             " show command in bottom bar
 set lazyredraw          " redraw only when we need to
 set showmatch           " highlight matching [{()}]
 filetype indent on      " load filetype-specific indent files
-"set cursorline          " highlight current line
-"set wildmenu            " visual autocomplete for command menu
+set wildmenu            " visual autocomplete for command menu
+" set cursorline          " highlight current line
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
@@ -30,9 +32,4 @@ set foldmethod=indent   " fold based on indent level
 nnoremap <F2> :w<CR>
 nnoremap <F5> :w !python3<CR>
 nnoremap <F10> :q<CR>
-
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 
