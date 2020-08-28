@@ -32,7 +32,7 @@ set foldmethod=indent   " fold based on indent level
 set splitbelow
 set splitright
 
-nnoremap <F2> :w<CR>
+" nnoremap <F2> :w<CR>
 nnoremap <F5> :w !python3<CR>
-nnoremap <F10> :q<CR>
+" nnoremap <F10> :q<CR>
 
