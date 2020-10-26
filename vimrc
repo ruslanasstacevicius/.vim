@@ -5,13 +5,9 @@ set t_vb=
 syntax enable
 set background=dark
 
-au BufNewFile,BufRead *.py
-    \ set expandtab     |
-    \ set autoindent    |
-    \ set tabstop=4     |" number of visual spaces per TAB
-    \ set softtabstop=4 |" number of spaces in tab when editing
-    \ set shiftwidth=4  |" tabs are spaces
-    \ set textwidth=79
+set tabstop=4           " number of visual spaces per TAB
+set softtabstop=4       " number of spaces in tab when editing
+set shiftwidth=4        " tabs are spaces
 
 
 set number              " show line numbers
@@ -33,6 +29,9 @@ set foldnestmax=10      " 10 nested fold max
 set foldmethod=indent   " fold based on indent level
 " space open/closes folds
 " nnoremap <space> za
+
+set splitbelow
+set splitright
 
 nnoremap <F2> :w<CR>
 nnoremap <F5> :w !python3<CR>
